@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <style>
+            .log-nav .nav-logo{
+            display: -webkit-flex;
+			display: flex;
+            }
+            .column.side {
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			}
+			/* Middle column */
+			.column.middle {
+			-webkit-flex: 5;
+			-ms-flex: 5;
+			flex: 5;
+			}
+            .log-nav {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            z-index: 4;
+            background-color: chartreuse;
+            height: 88px;
+            }
+            body {
+            margin: 0px;    
+            }
+            #nav-bar {
+            width: 100%;
+            margin: 34px;
+            }
+            a.nav-link {
+            padding: 15px;
+            margin: 35.8px;
+            font-weight: 600;
+            text-decoration: none !important;
+            cursor: pointer;
+            }
+            #welcome-section {
+            padding-top: 40vh;                 
+            background: rgb(241 229 229);
+            text-align: center;
+            }
+            main { 
+            display: grid;
+            grid-template-rows: 100vh auto 300px 100px;
+            }
+            .tiles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            width: 100%;
+            }
+            .project-tile {
+            padding: 2em;
+            }
+            img {
+            max-width:100% ;
+            height: auto;
+            margin-bottom: 20px;
+            }
+            #projects, #wish, #contact {
+            text-align: center;
+            }
+            #projects div {
+            font-weight: bold;
+            font-size: 24px;
+            }
+            #projects h1 {
+            margin-bottom: 35px;
+            }
+            .project-tile a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            }
+            #wish {
+            background: rgb(241 229 229);
+            }
+            #wish h1:first-child{
+            padding-top: 90px;
+            }
+            #contact {
+            background-color: chartreuse;
+            }
+            #contact h1 {
+            margin-top: 36px;
+            }
+            @media (max-width:1010px) {
+            a.nav-link {
+            margin: 0px;
+            }
+            }
+            @media (max-width:620px) {
+            a.nav-link {
+            padding: 5px;
+            }
+            }
+            @media (max-width:530px) {
+            .log-nav { 
+            display: block;
+            }
+            a.nav-link {
+            padding: 15px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="log-nav">
+            <div class="column side"></div>
+            <div class="column middle nav-logo">
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#welcome-section">Viewport</a> 
+                    <a class="nav-link" href="#projects">My Works</a> 
+                    <a class="nav-link" href="#wish">Wish</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="column side"></div>
+        </div>
+        <main>
+            <section id="welcome-section">
+                <h1>Hai I am Yusuf Ahmed</h1>
+                <h1>A front developer</h1>
+                <h1>I have shown my knowledge on this site</h1>
+            </section>
+            <section id="projects">
+                <h1>Click Below Images To View My Projects In The New Tab</h1>
+                <div class="tiles">
+                    <a>
+                        <div class="project-tile">
+                            <img src="Project1.JPG">
+                            <div>Tribute Page</div>    
+                        </div>
+                    </a>
+                    <a>
+                    <div class="project-tile">
+                        <img src="Project2.JPG">
+                        <div>Survey Form</div>
+                    </div>
+                    </a>
+                    <a>
+                        <div class="project-tile">
+                            <img src="Project3.JPG">
+                            <div>Landing Page</div>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="project-tile">
+                            <img src="Project4.JPG">
+                            <div>Technical Documentation Page</div>
+                        </div>
+                    </a>    
+                </div>
+            </section>
+            <section id="wish">
+                <h1>Share our knowledge</h1>
+                <h1>I am seeking job for a frontend developer</h1>
+            </section>
+            <section id="contact">
+                <h1>Contact : sibiramhindustan@gmail.com</h1>
+            </section>
+        </main>
+    </body>
+</html>

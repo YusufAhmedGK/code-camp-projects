@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ID Card Profile</title>
+	<head>
+    	<style>
+			#survey-form {
+				display: grid;
+  				grid-template-columns: 1fr 3fr;
+			}
+			form label {padding:20px;}
+			form label label{padding:0px;}
+			#name, #email, #mobile, #number, #birth, #dropdown, #addess {
+				width: 100%;
+				padding: 5px;
+			}
+			#title, #description, .container, #dri-lic, #gender {	
+				display: -webkit-flex;
+				display: flex;
+			}
+			#title, #description {
+				justify-content: center;
+			}
+			#two-whe, #four-whe, #both, #gender-label-male, #gender-label-female {
+				flex: 1;
+			}
+			/* Left and right column */
+			.column.side {
+				-webkit-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+			}
+			/* Middle column */
+			.column.middle {
+				-webkit-fex: 5;
+				-ms-flex: 5;
+				flex: 5;
+			}
+			button:hover {
+			transition: transform .4s ease;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 13px rgb(0 0 0 / 70%);
+			color: #1a1a1a;
+			}
+			button {
+			margin-right: 15px;
+			padding: 10px 12px;
+			font-size: 12px!important;
+			background: #26abe2;
+			color: #fff!important;
+			transition: transform .3s ease;
+			font-family: QuicksandBold;
+			letter-spacing: .6px;
+			line-height: 1.4!important;
+			min-width: 150px;
+			}
+		</style>
+	</head>
+	<body>
+    	<h1 id=title>ID Card Profile</h1>
+        <p id=description><strong>Give Your Details For Creating Your College ID Card</strong></p>
+        <div class="container">
+			<div class="column side"></div>
+    		<div class="column middle">
+        		<form id="survey-form">
+        			<label id="name-label" >Name</label>
+            		<label><input placeholder="Your Name" id="name" maxlength="30" minlength="3" required></label>
+            		<label id="email-label">Email</label>
+            		<label><input placeholder="Your Email" id="email" type="email" required></label>
+            		<label id="rolno-label">Roll No.</label>
+            		<label><input placeholder="Your Roll No" id="number" type="number" min="101001" max="999999"></label>
+            		<label id="number-label">Phone No.</label>
+            		<label><input placeholder="Your Mobile No" id="mobile" type="tel" pattern="[0-9]{10}"></label>
+            		<label id="birthday-label">Birthday</label>
+            		<label><input type="date" id="birth"></label>
+            		<label id="gender-label">Gender</label>
+            		<label id="gender">
+            			<label id="gender-label-male"><input type="radio" placeholder="" name="gender" value="male">Male</label>
+            			<label id="gender-label-female"><input type="radio" placeholder="" name="gender" value="female">Female</label>
+            		</label>
+            		<label id="bld-grb">Blood Group</label>
+            		<label>
+            			<select id="dropdown" name="bloods">
+    						<option value="A+ve">A+ve</option>
+				    		<option value="O+ve">O+ve</option>
+				    		<option value="B+ve">B+ve</option>
+				    		<option value="AB+ve">AB+ve</option>
+				    		<option value="A-ve">A-ve</option>
+				   			<option value="O-ve">O-ve</option>
+				    		<option value="B-ve">B-ve</option>
+				    		<option value="AB-ve">AB-ve</option>
+						</select>
+            		</label>
+            		<label id="dr-lic-label">Driving Licence</label>
+            		<label id="dri-lic">
+       			  		<label id="two-whe"><input type="checkbox" placeholder="" value="two-wheeler">Two Wheeler</label>
+               			<label id="four-whe"><input type="checkbox" placeholder="" value="four-wheeler">Four Wheeler</label>
+         				<label id="both"><input type="checkbox" placeholder="" value="both">Both</label>
+            		</label>
+            		<label id="address-label">Address</label>
+            		<label><textarea id="addess"></textarea></label>
+            		<label><button id="submit" type="submit" onclick="alert('Hello World!')">Submit</button></label>
+        		</form>
+            </div>
+            <div class="column side"></div>
+    	</div>        
+	</body>
+</head>

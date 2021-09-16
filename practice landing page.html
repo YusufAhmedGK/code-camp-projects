@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fidel Castro</title>
+		<style>
+			#main {
+			margin: 0px;
+			}
+			#header {
+			height: 80px;
+			}
+			.log-nav {	
+			display: flex;
+    		width: 100%;
+			position: fixed;
+    		z-index: 4;
+			background-color: chartreuse;
+			}
+			#nav-bar {
+			width: 100%;
+    		margin: 27px;
+			}
+			#header-img {
+			height: 80px;
+			}
+			a.nav-link {
+			padding: 15px;
+    		margin: 35.8px;
+			font-weight: 600;
+			text-decoration: none !important;
+			cursor: pointer;
+			}
+			.content {
+			position: relative;
+			}
+			h1 {
+			font-size: 60px;
+			}
+			h1, .trib-link {
+			justify-content: center;
+			}
+			h1, .img-mid, #image, #img-caption, .img-pro, #tribute-info, .trib-link, #header, .nav-logo, #-seg, #video-seg, .form-div {
+			display: -webkit-flex;
+			display: flex;
+			}
+			#image {
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;				
+			}
+			#img-caption {
+			-webkit-flex: 3.5;
+			-ms-flex: 3.5;
+			flex: 3.5;
+			padding: 5%;
+			}
+			#img-caption
+			{
+			font-size:40px;
+			}
+			#image {
+			width:300px;
+			max-width: 100%;
+			height: auto;
+			}
+			.inner-title {
+			font-size: 45px;
+			}
+			.vid-cub video {
+			width: 100%;
+			height: auto;
+			}
+			.vid-cub iframe {
+			width: 100%;
+			height: auto;
+			}
+			/* Left and right column */
+			.column.side {
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			}
+			/* Middle column */
+			.column.middle {
+			-webkit-flex: 5;
+			-ms-flex: 5;
+			flex: 5;
+			}
+			#tribute-info .column.middle p{
+			font-size: 20px;
+			}
+			#form {
+			display: grid;
+    		grid-template-columns: 1fr 3fr;
+			}
+			form label {
+			padding: 20px;
+			}
+			#email {
+			width: 100%;
+ 		    padding: 5px;
+			}
+			#submit:hover {
+			transition: transform .4s ease;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 13px rgb(0 0 0 / 70%);
+			color: #1a1a1a;
+			}
+			#submit {
+			margin-right: 15px;
+			padding: 10px 12px;
+			font-size: 20px;
+			background: #26abe2;
+			color: #fff!important;
+			transition: transform .3s ease;
+			font-family: QuicksandBold;
+			letter-spacing: .6px;
+			line-height: 1.4!important;
+			min-width: 80%;
+			justify-items:center;
+			}
+			#tribute-link {
+			font-size:30px;
+			padding: 3%;
+			}
+			@media (max-width: 1200px) {
+			#img-caption
+			{
+			font-size:30px;
+			}
+			}
+			@media (max-width: 1130px) {
+			a.nav-link {
+			margin: 0px;
+			}
+			}
+			@media (max-width: 850px) {
+			#img-caption
+			{
+			font-size:20px;
+			}
+			}
+			@media (max-width: 750px) {
+			a.nav-link {
+			padding: 5px;
+			}
+			}
+			@media (max-width: 650px) {
+			#img-caption
+			{
+			font-size:15px;
+			}
+			}
+			@media (max-width: 630px) {
+			#nav-bar {
+			margin: 27px 9px;
+			}
+			}
+			@media (max-width: 600px) {
+			#tribute-info, .img-mid {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			}
+			#img-caption
+			{
+			font-size:20px;
+			}
+			}
+			@media (max-width: 590px) {
+			.nav-logo {
+			display: block;
+			}
+			}
+		</style>
+		<!-- <script>
+		function myFunction() {
+		var elmnt = document.getElementById("quotes");
+		elmnt.scrollIntoView();
+		window.scrollBy(0, -116);
+		}
+		function early() {
+		var elmnt = document.getElementById("description");
+		elmnt.scrollIntoView();
+		window.scrollBy(0, -116);
+		}
+		function cuba() {
+		var elmnt = document.getElementById("video");
+		elmnt.scrollIntoView();
+		window.scrollBy(0, -116);
+		}
+		function email() {
+		var elmnt = document.getElementById("form");
+		elmnt.scrollIntoView();
+		window.scrollBy(0, -116);
+		}
+		</script>-->
+	</head>
+	<body id="main" class="container">
+		<header id="header">
+			<div class="log-nav">
+				<div class="column side"></div>
+				<div class="column middle nav-logo">
+					<img id="header-img" src="PikPng.com_cuba-flag-png_1601775.png" >
+					<nav id="nav-bar">
+						<a class="nav-link" href="#img-caption" >Quotes</a> 
+						<a class="nav-link" href="#description">Early Life</a> 
+						<a class="nav-link" href="#video">Cuba History</a>
+						<a class="nav-link" href="#email">Email</a>
+					</nav>
+				</div>
+				<div class="column side"></div>
+			</div>
+		</header>
+		<div class="content">
+  			<h1 id="title">Fidel Castro</h1>
+  			<div id="img-div">
+    			<div class="img-mid"> 
+  					<div class="column side"></div>
+					<div class="column middle img-pro">
+						<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Fidel_Castro_1950s.jpg">
+						<div id="img-caption">What we did yesterday taught us that nothing is impossible what seemed impossible yesterday was possible today so nothing will seem impossible tomorrow </div>
+					</div> 
+    				<div class="column side"></div>
+    			</div>
+				<h1 id="quotes" class="inner-title">Fidel Castro Quotes</h1>
+    			<div class="img-mid">   
+    				<div class="column side"></div>
+  					<div class="column middle">
+  						<div id="img-caption">What we did yesterday taught us that nothing is impossible what seemed impossible yesterday was possible today so nothing will seem impossible tomorrow </div>
+    				</div> 
+    				<div class="column side"></div>
+    			</div>
+  			</div>
+			<h1 id="early" class="inner-title">Fidel Castro's Early Life</h1>
+			<div id="tribute-info">
+    			<div class="column side"></div>
+    			<div class="column middle"><p id="description">Born in Birán, Oriente, the son of a wealthy Spanish farmer, Castro adopted leftist and anti-imperialist ideas while studying law at the University of Havana. After participating in rebellions against right-wing governments in the Dominican Republic and Colombia, he planned the overthrow of Cuban President Fulgencio Batista, launching a failed attack on the Moncada Barracks in 1953. After a year's imprisonment, Castro traveled to Mexico where he formed a revolutionary group, the 26th of July Movement, with his brother Raúl Castro and Ernesto "Che" Guevara. Returning to Cuba, Castro took a key role in the Cuban Revolution by leading the Movement in a guerrilla war against Batista's forces from the Sierra Maestra. After Batista's overthrow in 1959, Castro assumed military and political power as Cuba's prime minister. The United States came to oppose Castro's government and unsuccessfully attempted to remove him by assassination, economic blockade, and counter-revolution, including the Bay of Pigs Invasion of 1961. Countering these threats, Castro aligned with the Soviet Union and allowed the Soviets to place nuclear weapons in Cuba, resulting in the Cuban Missile Crisis – a defining incident of the Cold War – in 1962.</p>
+    			</div>
+    			<div class="column side"></div>
+  			</div>
+			<h1 id="cuba" class="inner-title">Cuba History</h1>  
+			<div id="video-seg">
+    			<div class="column side"></div>
+    			<div class="column middle vid-cub">
+					<video id="video" controls>
+						<source src="cuba history.mp4">
+					</video>
+    			</div>
+    			<div class="column side"></div>
+  			</div>
+			<h1 id="email-seg"  class="inner-title">Give Your email</h1>
+			<div class="form-div">
+				<div class="column side"></div>
+    			<div class="column middle">
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<label id="email-label">Email</label>
+            			<label><input placeholder="Your Email" name="email" id="email" type="email" required></label>
+						<label><input id="submit" type="submit" value="send"></label>
+					</form>
+    			</div>
+    			<div class="column side"></div>
+			</div>
+		</div>
+		<div>
+			<div class="trib-link">
+				<a  id="tribute-link" href="https://en.wikipedia.org/wiki/Fidel_Castro" target="_blank">For More Information</a>
+			</div>
+		</div>
+	</body>
+</html>   

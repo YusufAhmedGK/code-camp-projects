@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fidel Castro</title>
+
+<style>
+h2, .img-mid, .trib-link 
+  {
+  	justify-content: center;
+  }
+#image
+  {
+  	max-width: 100%;
+  	height: auto;
+  }
+#title{
+	font-size:40px;	
+	}
+#tribute-link{
+	font-size:30px;
+	padding: 20px;
+}
+#image
+  {
+	  width:300px;
+  }
+h2, #img-caption, #tribute-info, .trib-link,.img-mid
+	{
+		display: -webkit-flex;
+		display: flex;
+	}
+@media (max-width: 600px) {
+  #tribute-info, .img-mid {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.column.middle {
+	display:flex;
+	justify-content: center;	
+ 	padding: 10px;
+}
+#img-caption
+	{
+		padding: 50px;
+		font-size:30px;
+	}
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+/* Middle column */
+.column.middle {
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  
+}
+</style>
+</head>
+<body id="main">
+<div class="content">
+  <h2 id="title">Fidel Castro</h2>
+  <div id="img-div">
+    <div class="img-mid"> 
+  		<div class="column side"></div>
+  		<div class="column middle">
+  			<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Fidel_Castro_1950s.jpg">
+   		</div> 
+    	<div class="column side"></div>
+    </div>
+    <div class="img-mid">   
+    	<div class="column side"></div>
+  		<div class="column middle">
+  			<div id="img-caption">What we did yesterday taught us that nothing is impossible what seemed impossible yesterday was possible today so nothing will seem impossible tomorrow </div>
+    	</div> 
+    	<div class="column side"></div>
+    </div>
+  </div>
+  <div id="tribute-info">
+    <div class="column side"></div>
+    <div class="column middle"><p>Born in Birán, Oriente, the son of a wealthy Spanish farmer, Castro adopted leftist and anti-imperialist ideas while studying law at the University of Havana. After participating in rebellions against right-wing governments in the Dominican Republic and Colombia, he planned the overthrow of Cuban President Fulgencio Batista, launching a failed attack on the Moncada Barracks in 1953. After a year's imprisonment, Castro traveled to Mexico where he formed a revolutionary group, the 26th of July Movement, with his brother Raúl Castro and Ernesto "Che" Guevara. Returning to Cuba, Castro took a key role in the Cuban Revolution by leading the Movement in a guerrilla war against Batista's forces from the Sierra Maestra. After Batista's overthrow in 1959, Castro assumed military and political power as Cuba's prime minister. The United States came to oppose Castro's government and unsuccessfully attempted to remove him by assassination, economic blockade, and counter-revolution, including the Bay of Pigs Invasion of 1961. Countering these threats, Castro aligned with the Soviet Union and allowed the Soviets to place nuclear weapons in Cuba, resulting in the Cuban Missile Crisis – a defining incident of the Cold War – in 1962.</p>
+    </div>
+    <div class="column side"></div>
+  </div>
+  <div class="trib-link">
+  	<a  id="tribute-link" href="https://en.wikipedia.org/wiki/Fidel_Castro" target="_blank">For More Information</a>
+  </div>
+</div>
+</body>
+</html>
